@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
 import { ClothesCatalogComponent } from './pages/clothes-catalog/clothes-catalog.component';
 import { ClothesCartComponent } from './components/clothes-cart/clothes-cart.component';
+import { IClothes } from './interfaces/clothes.interface';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,12 @@ export class AppComponent {
   addedClothesList: IClothes[] = [];
 
   addClothesToCart(clothes: IClothes) {
+    console.log("Que ótimo! A peça foi adicionada ao carrinho.");
     this.addedClothesList.push(clothes);
+    this.addedClothesList = [...this.addedClothesList]
+
+    console.log(this.addedClothesList);
+    
   }
 }
+

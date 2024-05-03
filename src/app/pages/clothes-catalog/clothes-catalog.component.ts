@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 import { IClothes } from '../../interfaces/clothes.interface';
 import { ClothesCardComponent } from '../../components/clothes-card/clothes-card.component';
@@ -13,6 +13,7 @@ import { ClothesCardComponent } from '../../components/clothes-card/clothes-card
   styleUrl: './clothes-catalog.component.css'
 })
 export class ClothesCatalogComponent {
+  @Output() addClothesToCart: EventEmitter<IClothes> = new EventEmitter(); 
   teste: string = 'ABC';
   clothesList: IClothes[] = [
     {
@@ -21,7 +22,7 @@ export class ClothesCatalogComponent {
       "categoria": "feminino",
       "preco": 19.99, 
       "tamanho": "46, 48, 50, 52",
-      "cor": "branca, preta",
+      "cor": "verde, preta",
       "descricao": "Camiseta branca de malha",
       "quantidade": 10,
     },    
@@ -47,7 +48,7 @@ export class ClothesCatalogComponent {
     },
     {
       "id": 4,
-      "nome": "Calça Jeans",
+      "nome": "Calça Jeans masculina",
       "categoria": "masculino",
       "preco": 109.99, 
       "tamanho": "50, 52, 54",
@@ -57,7 +58,7 @@ export class ClothesCatalogComponent {
     },
     {
       "id": 5,
-      "nome": "Calça Jeans",
+      "nome": "Calça Jeans Feminina",
       "categoria": "feminino",
       "preco": 109.99, 
       "tamanho": "46, 48, 50, 52",
@@ -77,4 +78,10 @@ export class ClothesCatalogComponent {
     },
   ];
 
+  warnAboutAddClothesToCart(clothes: IClothes) {
+    console.log("Adicionar ao carrinho");
+    console.log(clothes);
+    this.addClothesToCart.emit(clothes);
+    
+  }
 }

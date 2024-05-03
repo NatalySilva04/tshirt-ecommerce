@@ -22,7 +22,8 @@
     
 
   @for(clothes of clothesList; track clothes.id) {
-    <app-clothes-card [clothes]="clothes" teste="teste"> </app-clothes-card>
+    <app-clothes-card [clothes]="clothes" teste="teste" 
+    (addClothesToCart)="warnAboutAddClothesToCart(clothes)"></app-clothes-card>
   } @empty {
     <p>O estoque de roupas está vazio!</p>
   }

@@ -13,7 +13,7 @@ import { NgIf } from '@angular/common';
 export class ClothesCardComponent implements OnInit {
   @Input() clothes?: IClothes;
   @Input() teste?: string;
-  @Output() addClothesToCart: EventEmitter <any>= new EventEmitter();
+  @Output() addClothesToCart: EventEmitter<void> = new EventEmitter();
 
 
   constructor() { 
@@ -27,6 +27,7 @@ export class ClothesCardComponent implements OnInit {
   }
 
   addToShoppingCart() {
+    this.addClothesToCart.emit();
     console.log("Peça adicionada ao carrinho com sucesso!");
   }
 }

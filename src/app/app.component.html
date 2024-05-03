@@ -6,10 +6,10 @@
 
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
-        <app-clothes-cart></app-clothes-cart>
+        <app-clothes-cart [clothesList]="addedClothesList"></app-clothes-cart>
     </mat-drawer>          
    
-    <app-clothes-catalog></app-clothes-catalog>
+    <app-clothes-catalog (addClothesToCart)="addClothesToCart($event)"></app-clothes-catalog>
 
     <router-outlet />
 </mat-drawer-container>
