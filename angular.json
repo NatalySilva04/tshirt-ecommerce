@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "clothes-ecommerce": {
+    "tshirt-ecommerce": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/clothes-ecommerce",
+            "outputPath": "dist/tshirt-ecommerce",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "clothes-ecommerce:build:production"
+              "buildTarget": "tshirt-ecommerce:build:production"
             },
             "development": {
-              "buildTarget": "clothes-ecommerce:build:development"
+              "buildTarget": "tshirt-ecommerce:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "clothes-ecommerce:build"
+            "buildTarget": "tshirt-ecommerce:build"
           }
         },
         "test": {

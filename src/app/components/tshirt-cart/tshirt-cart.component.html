@@ -1,0 +1,12 @@
+<mat-list>
+    @for(tshirt of addedTshirtList; track tshirt.id) {
+        <mat-list-item>
+            {{ tshirt.nome }} | {{ tshirt.totalAddedToCart }}
+            <button mat-button color="warn" (click)="decrementTotalTshirtCopies(tshirt)">-</button>
+            <button mat-button color="primary" (click)="incrementTotalTshirtCopies(tshirt)">+</button> 
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    } @empty {
+        <mat-list-item>Carrinho vazio!</mat-list-item>
+    }
+  </mat-list>

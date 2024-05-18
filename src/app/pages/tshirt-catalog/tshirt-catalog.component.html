@@ -1,0 +1,7 @@
+  @for(tshirt of tshirtList; track tshirt.id) {
+    <app-tshirt-card [tshirt]="tshirt" teste="teste" 
+    (addtshirtToCart)="warnAboutAddTshirtToCart(tshirt)"></app-tshirt-card>
+  } @empty {
+    <p>Seu estoque de camisetas está vazio!</p>
+  }
+  <app-tshirt-card> </app-tshirt-card>

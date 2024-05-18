@@ -1,0 +1,45 @@
+<form [formGroup]="tshirtForm">
+    <div>
+      <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <!-- <input matInput name="title" [value]="newTshirt.title" (input)="changeTitleValue($event)"> -->
+        <input matInput formControlName="nome">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Cor</mat-label>
+        <input matInput formControlName="cor">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Descrição</mat-label>
+        <textarea matInput formControlName="descricao"></textarea>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Tamanho</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="tamanho" >
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Preço</mat-label>
+        <input  matInput type="number" placeholder="0" formControlName="preco">
+        <span matTextPrefix>$&nbsp;</span>
+        <span matTextSuffix>.00</span>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Quantidade em Estoque</mat-label>
+        <input matInput type="number" formControlName="totalInStock">
+      </mat-form-field>
+    </div>
+  
+    <button mat-flat-button color="primary" (click)="submitForm()">Enviar</button>
+  </form>

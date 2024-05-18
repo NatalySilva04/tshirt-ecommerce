@@ -1,0 +1,26 @@
+<form [formGroup]="loginForm">
+    <div>
+      <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input
+          matInput
+          formControlName="email"
+          (blur)="updateEmailErrorMessage()">
+      </mat-form-field>
+  
+      @if (this.loginForm.controls["email"].invalid) {
+        <mat-error>{{emailError}}</mat-error>
+      }
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+      @if (this.loginForm.controls["password"].invalid) {
+        <mat-error>{{passwordError}}</mat-error>
+      }
+    </div>
+  
+    <button mat-flat-button color="primary" (click)="submitForm()">Enviar</button>
+  </form>

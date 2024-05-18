@@ -1,17 +1,19 @@
-<app-header >
+<app-header>
     <button type="button" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon>shopping_cart</mat-icon>
-    </button> 
-</app-header>
-
-<mat-drawer-container class="example-container" autosize>
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </app-header>
+  
+  <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
-        <app-clothes-cart [clothesList]="addedClothesList"></app-clothes-cart>
-    </mat-drawer>          
-   
-    <app-clothes-catalog (addClothesToCart)="addClothesToCart($event)"></app-clothes-catalog>
-
+      <!-- <app-tshirt-cart [tshirtList]="addedTshirtList"></app-tshirt-cart> -->
+      <app-tshirt-cart />
+    </mat-drawer>
+  
+    <!-- <app-tshirt-catalog (addTshirtToCart)="addTshirtToCart($event)"></app-tshirt-catalog>
+  
+    <app-tshirt-create /> -->
     <router-outlet />
-</mat-drawer-container>
-
- <!--<h1>Hello, {{ title }}</h1>   -->
+  </mat-drawer-container>
+  
+  <!-- <h1>Hello, {{ title }}</h1> -->
