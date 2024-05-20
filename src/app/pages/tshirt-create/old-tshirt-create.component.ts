@@ -5,43 +5,44 @@
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatButtonModule } from '@angular/material/button';
 // import { provideNativeDateAdapter } from '@angular/material/core';
-// import { ITshirt } from '../../interfaces/book.interface';
+// import { ITshirt } from '../../interfaces/tshirt.interface';
 // import { FormsModule } from '@angular/forms';
 
 // @Component({
-//   selector: 'app-book-create',
+//   selector: 'app-tshirt-create',
 //   standalone: true,
 //   imports: [ MatFormFieldModule, MatInputModule, MatDatepickerModule, MatButtonModule, FormsModule ],
 //   providers: [ provideNativeDateAdapter() ],
-//   templateUrl: './book-create.component.html',
-//   styleUrl: './book-create.component.css'
+//   templateUrl: './tshirt-create.component.html',
+//   styleUrl: './tshirt-create.component.css'
 // })
-// export class BookCreateComponent implements OnInit {
-//   booksList: ITshirt[] = [];
-//   newBook: ITshirt = {
+// export class TshirtCreateComponent implements OnInit {
+//   tshirtList: ITshirt[] = [];
+//   newTshirt: ITshirt = {
 //     "id": 1,
-//     "title": "Título do Livro",
-//     "author": "Nome do Autor",
-//     "description": "Descrição detalhada do livro",
-//     "published_date": new Date(),
-//     "price": 59.99,
+//     "nome": "T-shirt",
+//     "categoria": "feminina",
+//     "preco": 59.99,
+//     "tamanho": "P, M, G, GG",
+//     "cor": "PretA, Branca",
+//     "descricao": "Camiseta branca de algodão com a frase "..."",     
 //     "totalInStock": 20,
 //     "totalAddedToCart": 0,
 //   };
 
 //   ngOnInit() {
-//     this.booksList = JSON.parse(localStorage.getItem("booksList") || "[]");
+//     this.tshirtList = JSON.parse(localStorage.getItem("tshirtList") || "[]");
 //   }
 
 //   // changeTitleValue(event: Event) {
 //   //   const target = event.target as HTMLInputElement;
-//   //   this.newBook.title = target.value;
-//   //   console.log(this.newBook);
+//   //   this.newTshirt.title = target.value;
+//   //   console.log(this.newTshirt);
 //   // }
 
 //   submitForm() {
-//     console.log(this.newBook);
-//     this.booksList.push(this.newBook);
-//     localStorage.setItem("booksList", JSON.stringify(this.booksList));
+//     console.log(this.newTshirt);
+//     this.TshirtList.push(this.newTshirt);
+//     localStorage.setItem("tshirtList", JSON.stringify(this.tshirtList));
 //   }
 // }
