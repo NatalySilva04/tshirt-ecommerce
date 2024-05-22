@@ -6,7 +6,6 @@ import { TshirtCardComponent } from '../../components/tshirt-card/tshirt-card.co
 import { TshirtCatalogService } from '../../services/tshirt-catalog.service';
 import { RouterOutlet } from '@angular/router';
 
-
 @Component({
   selector: 'app-tshirt-catalog',
   standalone: true,
@@ -14,8 +13,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './tshirt-catalog.component.html',
   styleUrl: './tshirt-catalog.component.css'
 })
-export class TshirtCatalogComponent {
+export class TshirtCatalogComponent implements OnInit {
   @Output() addTshirtToCart: EventEmitter<ITshirt> = new EventEmitter(); 
+  // tshirtList: Array<ITshirt>
   teste: string = 'ABC';
   tshirtList: ITshirt[] = [];
 

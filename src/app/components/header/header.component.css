@@ -2,3 +2,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}

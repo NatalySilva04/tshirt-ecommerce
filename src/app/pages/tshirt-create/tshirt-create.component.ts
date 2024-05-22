@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -37,12 +37,14 @@ export class TshirtCreateComponent {
     private router: Router
   ) {
     this.tshirtId = this.route.snapshot.params["id"];
+    // this.route.params.subscribe((params: Params) => {
+    //   console.log(params);
+    // });
      
     this.tshirtToUpdate = this.tshirtCatalogService.getTshirtById(this.tshirtId);
     console.log(this.tshirtToUpdate);
 
-    this.tshirtForm = new FormGroup({
-      
+    this.tshirtForm = new FormGroup({      
       nome: new FormControl(this.tshirtToUpdate?.nome),
       preco: new FormControl(this.tshirtToUpdate?.preco),
       descricao: new FormControl(this.tshirtToUpdate?.descricao),
@@ -52,6 +54,12 @@ export class TshirtCreateComponent {
 });
 
 }
+
+  // changeTitleValue(event: Event) {
+  //   const target = event.target as HTMLInputElement;
+  //   this.newTshirt.title = target.value;
+  //   console.log(this.newTshirt);
+  // }
 
 submitForm() {
   let tshirtData: ITshirt = this.tshirtForm.value;

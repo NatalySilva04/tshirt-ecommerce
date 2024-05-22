@@ -1,5 +1,5 @@
 <mat-list>
-    @for(tshirt of addedTshirtList; track tshirt.id) {
+    @for(tshirt of addedTshirtList; track tshirt._id) {
         <mat-list-item>
             {{ tshirt.nome }} | {{ tshirt.totalAddedToCart }}
             <button mat-button color="warn" (click)="decrementTotalTshirtCopies(tshirt)">-</button>

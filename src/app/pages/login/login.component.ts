@@ -37,6 +37,16 @@ export class LoginComponent {
     });
 }
 
+ // emailFieldIsEmpty() {
+  //   const errors = this.loginForm.controls["email"].errors || {};
+  //   return errors["required"];
+  // }
+
+  // emailIsNotValid() {
+  //   const errors = this.loginForm.controls["email"].errors || {};
+  //   return errors["email"];
+  // }
+  
 updateEmailErrorMessage() {
   if (this.loginForm.controls["email"].hasError('required')) {
     this.emailError = 'Campo e-mail deve ser preenchido';

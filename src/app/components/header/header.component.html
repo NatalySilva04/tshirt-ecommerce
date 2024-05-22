@@ -1,6 +1,20 @@
 <mat-toolbar class="header-space">
     <div><span>ESCOLHER O NOME DA LOJA</span></div>
     
-    <div><ng-content></ng-content></div>    
+    <!-- <div class="navigation"> -->
+    <div>
+        <a mat-button routerLink="/" >Tshirt Catalogo</a>
+        <a mat-button routerLink="/tshirt/create" target="_blank">Crie um novo produto</a>
+    </div>
+
+    @if (loggedUser) {
+        <div>
+          Olá, Admin!
+          <button mat-flat-button color="warn" (click)="logoutUser()">Sair</button>
+        </div>
+    }
+
+    <div><ng-content></ng-content></div>   
+    <!-- </div> -->     
 </mat-toolbar>
 

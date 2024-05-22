@@ -8,7 +8,7 @@ id: any;
     tamanho: string;
     cor: string;
     descricao: string;
-    quantidade: number;
+    //quantidade: number;
     totalInStock: number;
     totalAddedToCart: number;
 };

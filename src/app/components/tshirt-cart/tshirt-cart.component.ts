@@ -15,6 +15,7 @@ import { TshirtCartApiService } from '../../services/tshirt-cart-api.service';
   styleUrl: './tshirt-cart.component.css'
 })
 export class TshirtCartComponent implements OnInit {
+  // @Input("tshirtList") addedTshirtList: ITshirt[] = [];
   addedTshirtList: ITshirt[] = [];
 
   constructor(
@@ -25,10 +26,14 @@ export class TshirtCartComponent implements OnInit {
   }
 
   ngOnInit() {
+    // console.log(this.addedTshirtList);
     const $addedTshirtList = this.tshirtCartApiService.tshirtList$;
     $addedTshirtList.subscribe((addedTshirtList) => {
       this.addedTshirtList = addedTshirtList;
-    });        
+    }); 
+    
+    // this.addedTshirtList = this.tshirtCartApiService.getAllTshirt();
+    // this.addedTshirtList = this.tshirtCartSevice.getAllTshirt();
   }
 
   //ngOnChanges(changes: SimpleChanges): void {

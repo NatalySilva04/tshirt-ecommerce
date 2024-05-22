@@ -11,6 +11,12 @@
       @if (this.loginForm.controls["email"].invalid) {
         <mat-error>{{emailError}}</mat-error>
       }
+      <!-- <div *ngIf="emailFieldIsEmpty()">
+      E-mail is required.
+    </div>
+    <div *ngIf="emailIsNotValid()">
+      E-mail is not valid.
+    </div> -->
     </div>
     <div>
       <mat-form-field>

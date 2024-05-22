@@ -16,7 +16,7 @@ import { IUser } from '../../interfaces/user.interface';
 @Component({
   selector: 'app-tshirt-card',
   standalone: true,
-  imports: [ MatCardModule, NgIf, MatButtonModule, RouterModule ],
+  imports: [ NgIf, MatCardModule, MatButtonModule, RouterModule ],
   templateUrl: './tshirt-card.component.html',
   styleUrl: './tshirt-card.component.css'
 })
@@ -46,6 +46,12 @@ export class TshirtCardComponent implements OnInit {
 
   addToShoppingCart() {
     this.tshirtCartApiService.addOrUpdateTshirtFromCart(this.tshirt); 
+  
+     // this.addTshirtToCart.emit();
+
+    // console.log(this.tshirt);
+    // this.tshirtCartSevice.findOrAddTshirt(this.tshirt);
+    // console.log("Tshirt adicionada com sucesso!");
   }
 
   removeFromCatalog() {
