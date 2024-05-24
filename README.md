@@ -1,27 +1,27 @@
 # TshirtEcommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+E-commerce – Tshirt Smile – Santander Coders 2023.2 – FrontEnd – Angular 
 
-## Development server
+## Finalidade
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto trata-se da avaliação final do segundo módulo Angular do Bootcamp “Santander Coders 2023.2 – FrontEnd”.
 
-## Code scaffolding
+## O que é
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+É composto por uma página de um ecommerce de T-shirt com frases engraçadas. Construída com Html, Css, JavaScript, TypeScript e Angular, onde contém uma página inicial com um catálogo do estoque, um carrinho onde é possível ver os itens adicionados para compra, uma página de login e uma página de administrador onde é possível a inserção e remoção de itens no catálogo. 
 
-## Build
+## Equipe
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O grupo foi formado por: Diego Reis | Lucas Quintino | Nataly Rodrigues | Tiago Dias | Thays Souza
 
-## Running unit tests
+## Conhecimentos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Foi possível aplicar os conhecimentos adquiridos de Angular e seus componentes e propriedade. 
 
-## Running end-to-end tests
+## Desafios
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+xxxxxxxxxxxxxxxxx
 
-## Further help
+## Servidor de desenvolvimento
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.6.
