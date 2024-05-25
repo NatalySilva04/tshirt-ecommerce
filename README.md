@@ -18,10 +18,6 @@ O grupo foi formado por: Diego Reis | Lucas Quintino | Nataly Rodrigues | Tiago 
 
 Foi possível aplicar os conhecimentos adquiridos de Angular e seus componentes e propriedade. 
 
-## Desafios
-
-xxxxxxxxxxxxxxxxx
-
 ## Servidor de desenvolvimento
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.6.
