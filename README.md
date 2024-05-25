@@ -18,6 +18,10 @@ O grupo foi formado por: Diego Reis | Lucas Quintino | Nataly Rodrigues | Tiago 
 
 Foi possível aplicar os conhecimentos adquiridos de Angular e seus componentes e propriedade. 
 
+## Tecnologias Utilizadas
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,angular)](https://skillicons.dev)
+
 ## Servidor de desenvolvimento
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.6.
