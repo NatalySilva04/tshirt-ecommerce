@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-
 import { HeaderComponent } from './components/header/header.component';
 import { TshirtCatalogComponent } from './pages/tshirt-catalog/tshirt-catalog.component';
 import { TshirtCartComponent } from './components/tshirt-cart/tshirt-cart.component';

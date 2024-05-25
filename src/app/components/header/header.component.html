@@ -1,16 +1,17 @@
-<mat-toolbar class="header-space">
-    <div><span>ESCOLHER O NOME DA LOJA</span></div>
+<mat-toolbar class="header-space" style="background-color: rgba(2, 52, 126, 0.815);">
+    <div><span style="color: rgb(151, 255, 246);">TSHIRT SMILE</span><mat-icon style="color: rgb(151, 255, 246);">mood</mat-icon></div>
     
+    <!-- <mat-icon>mood</mat-icon> -->
     <!-- <div class="navigation"> -->
     <div>
-        <a mat-button routerLink="/" >Tshirt Catalogo</a>
-        <a mat-button routerLink="/tshirt/create" target="_blank">Crie um novo produto</a>
+        <a mat-button routerLink="/"><span style="color: rgba(252, 253, 253, 0.959);">Tshirt Catalogo</span></a>
+        <a mat-button routerLink="/tshirt/create" target="_blank"><span style="color: rgba(252, 253, 253, 0.959);">Crie um novo produto</span></a>
     </div>
 
     @if (loggedUser) {
         <div>
-          Olá, Admin!
-          <button mat-flat-button color="warn" (click)="logoutUser()">Sair</button>
+          <span style="color: rgb(151, 255, 246);">Olá, Admin!</span>
+          <button  mat-flat-button color="white" (click)="logoutUser()"><span style="color: rgb(18, 50, 231);">Sair</span></button>
         </div>
     }
 

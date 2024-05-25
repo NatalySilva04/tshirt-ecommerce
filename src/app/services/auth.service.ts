@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   loginUser(user: IUser): boolean {
-    if (user.email == "admin@admin.com" && user.password == "admin123") {
+    if (user.email == "admin@tshirt.com" && user.password ==  "tshirt123") {
       localStorage.setItem("loggedUser", JSON.stringify(user));
       this.loggedUserSubject.next(this.getLoggedUser());
       this.router.navigate(['tshirt']);
