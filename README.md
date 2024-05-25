@@ -2,7 +2,7 @@
 
 E-commerce – Tshirt Smile – Santander Coders 2023.2 – FrontEnd – Angular 
 
-## Finalidade
+## Finalidade  
 
 O projeto trata-se da avaliação final do segundo módulo Angular do Bootcamp “Santander Coders 2023.2 – FrontEnd”.
 
@@ -17,6 +17,10 @@ O grupo foi formado por: Diego Reis | Lucas Quintino | Nataly Rodrigues | Tiago 
 ## Conhecimentos
 
 Foi possível aplicar os conhecimentos adquiridos de Angular e seus componentes e propriedade. 
+
+## Desafios
+
+xxxxxxxxxxxxxxxxx
 
 ## Servidor de desenvolvimento
 
